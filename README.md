@@ -1,14 +1,5 @@
-<p align="right">
- <a href="https://lax-chat.herokuapp.com/"><img src="app/assets/images/readme/readme_logo.png" style="height: 81px" alt="lax"/></a>
- </p>
- 
- ---
 
-### The better way to chat and reLAX
-
-___
-
-Welcome to Lax! Lax is a single page application maded with Ruby on Rails, PostgreSQL, and React-Redux. It is a clone of the website [Slack](https://slack.com/), a popular application used to communicate within companies. With Lax, however, we prioritize relaxation, communicating with friends, and having fun.
+Welcome to Lax! Lax is a clone of Slack, a prevalent messaging app . With Lax, users can create and join channels and send live messages to chat with other users. The live app can be accessed [here](https://lax13.herokuapp.com/)
 
 ![ Splash Page ](app/assets/images/readme/splashscreenshot.png)
 
