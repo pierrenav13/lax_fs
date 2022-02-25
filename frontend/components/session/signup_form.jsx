@@ -199,13 +199,13 @@ class SignupForm extends Component {
             <div className="auth-page signup">
                 <figure id="logo-button">
                     <Link to="/welcome">
-                        <FontAwesomeIcon icon="umbrella-beach" flip="horizontal"/>
+                        <i className="fas fa-couch"></i>
                         <span>lax</span>
                     </Link>
                 </figure>
                 <section className={ `auth-form-container signup` }>
                     <section className="auth-form">
-                        <h1>First, create your account</h1>
+                        <h1>First, create an account.</h1>
                         <form onSubmit={this.handleSubmit}>
 
                             <label htmlFor="fullname">
@@ -258,9 +258,9 @@ class SignupForm extends Component {
                             <button disabled={ this.errors.some(e => e !== null) ? true : false }>Create Account</button>
                         </form>
                             
-                        <button onClick={e => this.props.loginDemo()} className="demo">Log in as a demo user</button>
+                        <button onClick={e => this.props.loginDemo()} className="demo">Log in as Demo User</button>
                     </section>
-                    <p>If you already have a Lax account, you can <Link to="/login" >sign in</Link>.</p>
+                    <p>Already have an account? <Link to="/login" >Sign In</Link>.</p>
                 </section>
                 <ul className="signup-footer-container">
                     <li>
@@ -269,7 +269,7 @@ class SignupForm extends Component {
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/mmcnulty20/">
+                        <a href="https://github.com/pierrenav13">
                             Github
                         </a>
                     </li>

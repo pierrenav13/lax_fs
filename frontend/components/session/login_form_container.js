@@ -4,7 +4,10 @@ import AuthForm from './auth_form';
 
 const mapStateToProps = state => {
     const user = { username: "", email: "", password: "" }
-    const errors = [].concat(...Object.values(state.errors))
+    let errors = {}
+    if(state.errors){
+        errors = [].concat(...Object.values(state.errors))
+    }
     return {
         user,
         errors,

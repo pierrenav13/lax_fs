@@ -3,7 +3,7 @@ import React from 'react'
 const MyProfile = () => (
     <div>
         Developer:    
-        Megan McNulty
+        Pierre Navarin
     </div>
 )
 

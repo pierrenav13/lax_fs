@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useHistory } from 'react-router'
+import { useHistory } from 'react-router-dom'
 import { createDM } from '../../../../actions/dm_actions'
 import MessageForm from '../../channels/message_form'
 

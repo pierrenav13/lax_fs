@@ -34,10 +34,7 @@ class LaunchButton extends Component {
                     <ul className="workspaces">
                         <li onClick={e => this.props.history.push("/")}>
                             <div>
-                                <figure>
-                                    <FontAwesomeIcon id="logo-img" icon="umbrella-beach" flip="horizontal"/>
-                                </figure>
-                                Start Relaxing 
+                                Enter Lax
                             </div>
                             <FontAwesomeIcon icon="arrow-right" />
                         </li>

@@ -8,7 +8,7 @@ class SearchHeader extends Component {
         return (
             <div className="search-header">
                 <Searchbar />
-                <InfoDropdown />
+                {/* <InfoDropdown /> */}
             </div>
         )
     }

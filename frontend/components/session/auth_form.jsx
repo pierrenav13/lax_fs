@@ -28,7 +28,12 @@ class AuthForm extends Component {
     }
 
     render(){
-        const errors = this.props.errors.map((err,i) => <li key={i}><FontAwesomeIcon icon="exclamation-triangle"/><p>{err}</p></li> )
+        let errors = [];
+        let that = this;
+        console.log(errors);
+        if(this.props.errors){
+            errors = that.props.errors.map((err,i) => <li key={i}><FontAwesomeIcon icon="exclamation-triangle"/><p>{err}</p></li> )
+        }
         return (
             <>
             <div className={`auth-page login`}>
@@ -40,7 +45,6 @@ class AuthForm extends Component {
                 <section className={ `auth-form-container login` }>
                     <section className="auth-form">
                         <h2>{ `${this.props.formType } to Lax`}</h2>
-                        <h4>welcome to lax.com</h4>
                         <h3>Enter your <strong>email address</strong> and <strong>password</strong></h3>
                         <form onSubmit={this.handleSubmit}>
 
@@ -50,7 +54,7 @@ class AuthForm extends Component {
                                     id="email"
                                     autoComplete="email"
                                     value={this.state.email}
-                                    placeholder="you@example.com"
+                                    placeholder="johndoe@gmail.com"
                                     onChange={this.handleChange("email")} />
                                                         
                             </label>
@@ -61,7 +65,7 @@ class AuthForm extends Component {
                                     id="password"
                                     autoComplete="current-password"
                                     value={this.state.password}
-                                    placeholder="password"
+                                    placeholder="abc123"
                                     onChange={this.handleChange("password")} />
                                 
                             </label>
@@ -72,7 +76,7 @@ class AuthForm extends Component {
                     <button onClick={e => this.props.loginDemo()} className="demo">Log in as a demo user</button>
                 </section>
                 <p>
-                    If you don't have a Lax account, you can <Link to="/signup" >create an account</Link>.
+                    Don't have an account? <Link to="/signup" >Create an account</Link>.
                 </p>
             </div>
             <div className="auth-footer-container">

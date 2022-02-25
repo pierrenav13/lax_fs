@@ -28,7 +28,7 @@ class SidebarHeader extends Component {
                         { this.props.currentUser.username }
                     </span>
                 </div>
-                <ComposeButton />
+                {/* <ComposeButton /> */}
                 { this.state.open ? (
                     <SidebarHeaderDropdown
                         open={ this.state.open }
