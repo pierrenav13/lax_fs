@@ -24,7 +24,7 @@ const SidebarHeaderDropdown = ({ open, user }) => {
                 </p>
             </section>
 
-            <section className="options">
+            {/* <section className="options">
                 <ul>
                     <li onClick={ e => {
                             e.preventDefault();
@@ -36,7 +36,7 @@ const SidebarHeaderDropdown = ({ open, user }) => {
                         ) : null }
                     </li>
                 </ul>
-            </section>
+            </section> */}
 
             
             <ul>
