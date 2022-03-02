@@ -17,7 +17,7 @@ export default props => {
                     <a href="https://github.com/pierrenav13">Github</a>
                 </li>
                 <li>
-                    <a href="#">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/pierre-navarin-709335223/">LinkedIn</a>
                 </li>
             </ul>
             {props.loggedIn ? (

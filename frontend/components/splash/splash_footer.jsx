@@ -38,12 +38,12 @@ class SplashFooter extends Component {
                         <ul>
                             <li>OTHER PROJECTS</li>
                             <li>
-                                <a href="#" title="MERN">
+                                <a href="https://stu-dash.herokuapp.com/" title="MERN">
                                     StudyDash
                                 </a>
                             </li>
                             <li>
-                                <a href="#" title="Vanilla JS Game">
+                                <a href="https://pierrenav13.github.io/MedievalMelee/" title="Vanilla JS Game">
                                     Medieval Melee
                                 </a>
                             </li>
@@ -65,12 +65,12 @@ class SplashFooter extends Component {
                     <nav>
                         <ul>
                             <li>
+                                    Slack Clone
+                            </li>
+                            <li>
                                 <a href="https://slack.com/">
                                     Link to Slack
                                 </a>
-                            </li>
-                            <li>
-                                    Lax is a clone of Slack, the popular messaging platform.
                             </li>
                             {/* <li>
                                 <a href="https://slack.com/">
@@ -86,12 +86,12 @@ class SplashFooter extends Component {
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://angel.co/u/pierre-navarin">
                                     <FontAwesomeIcon icon={["fab", "angellist"]} />
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.linkedin.com/in/pierre-navarin-709335223/">
                                     <FontAwesomeIcon icon={["fab", "linkedin"]} />
                                 </a>
                             </li>

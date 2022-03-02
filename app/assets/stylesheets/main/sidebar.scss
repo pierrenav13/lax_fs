@@ -4,7 +4,8 @@
     // z-index: 0;
     border-top: 1px solid rgba($color: $background, $alpha: 0.2);
     background: $dark-blue;
-    height: calc(100vh - 38px);
+    // height: calc(100vh - 38px);
+    height: calc(100vh - 2px);
     margin-top: -30px;
     width: 260px;
     color: $background;

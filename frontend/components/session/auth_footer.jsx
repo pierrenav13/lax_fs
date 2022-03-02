@@ -8,9 +8,6 @@ const AuthFooter = props => {
             <div>
                 <ul>
                     <li>
-                        <span>Contact Me</span>
-                    </li>
-                    <li>
                         <a href="https://github.com/pierrenav13">
                             <button>
                                 <FontAwesomeIcon icon={["fab", "github"]} />
@@ -18,7 +15,7 @@ const AuthFooter = props => {
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/pierre-navarin-709335223/">
                             <button>
                                 <FontAwesomeIcon icon={["fab", "linkedin"]} />
                             </button>

@@ -217,7 +217,7 @@ class SignupForm extends Component {
                                         onBlur={this.handleLeave(0)}
                                         id="fullname"
                                         value={this.state.username}
-                                        placeholder="Your full name"
+                                        placeholder="Ex. John Doe"
                                         onChange={this.handleChange("username")} />
                                     { this.errors[0] }
                                     {this.state.check[0] ? ( <FontAwesomeIcon icon="check-circle" /> ) : null}
@@ -233,7 +233,7 @@ class SignupForm extends Component {
                                         value={this.state.email}
                                         onFocus={this.handleFocus(1)}
                                         onBlur={this.handleLeave(1)}
-                                        placeholder="name@work-email.com"
+                                        placeholder="jdoe12@gmail.com"
                                         onChange={this.handleChange("email")} />
                                         {this.errors[1]}
                                         {this.state.check[1] && !this.props.emailExists ? ( <FontAwesomeIcon icon="check-circle" /> ) : null}
@@ -249,7 +249,7 @@ class SignupForm extends Component {
                                         value={this.state.password}
                                         onFocus={this.handleFocus(2)}
                                         onBlur={this.handleLeave(2)}
-                                        placeholder="6 characters or more"
+                                        placeholder="Must be 6 characters or more"
                                         onChange={this.handleChange("password")} />
                                         {this.errors[2]}
                                         {this.state.check[2] ? ( <FontAwesomeIcon icon="check-circle" /> ) : null}
@@ -264,17 +264,12 @@ class SignupForm extends Component {
                 </section>
                 <ul className="signup-footer-container">
                     <li>
-                        <a href="https://slack.com/">
-                            Slack
-                        </a>
-                    </li>
-                    <li>
                         <a href="https://github.com/pierrenav13">
                             Github
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/pierre-navarin-709335223/">
                             LinkedIn
                         </a>
                     </li>
