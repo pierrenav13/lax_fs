@@ -28,12 +28,7 @@ class AuthForm extends Component {
     }
 
     render(){
-        let errors = [];
-        let that = this;
-        console.log(errors);
-        if(this.props.errors){
-            errors = that.props.errors.map((err,i) => <li key={i}><FontAwesomeIcon icon="exclamation-triangle"/><p>{err}</p></li> )
-        }
+        const errors = this.props.errors.map((err, i) => <li key={i}><FontAwesomeIcon icon="exclamation-triangle" /><p>{err}</p></li>)
         return (
             <>
             <div className={`auth-page login`}>
