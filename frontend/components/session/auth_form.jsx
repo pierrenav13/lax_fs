@@ -49,7 +49,7 @@ class AuthForm extends Component {
                                     id="email"
                                     autoComplete="email"
                                     value={this.state.email}
-                                    placeholder="johndoe@gmail.com"
+                                    placeholder="jdoe@gmail.com"
                                     onChange={this.handleChange("email")} />
                                                         
                             </label>
