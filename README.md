@@ -7,7 +7,6 @@ Welcome to Lax! Lax is a clone of Slack, a prevalent messaging app . With Lax, u
 
 
 
-
 ### Lax uses the following technologies:
   * Backend - Ruby on Rails
   * Database - PostgreSQL
