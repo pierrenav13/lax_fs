@@ -1,31 +1,15 @@
 
-De
 
-JJkhh
-Zz
-Zzzs
-
-Hh
-
-
-Hhjjjiijjj
-
-
-
-Waksnbwhw
-
-Gh
-
-Sas
 Mn
 
 You sss
 
+Mcccff
 
-Mmm
-Vvggg
+Mamsbbxdd
+Fddmm gr 
 
-Mamsbb
+ Ffccf x
 Jjjjbbb
 No 
 Ddd
@@ -39,7 +23,7 @@ Nsns
 
 Mdsdndnsnshg
 
-
+Ds
 Dsks
 
 Smsszz
