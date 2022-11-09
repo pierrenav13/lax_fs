@@ -8,9 +8,15 @@ Mcccff
 Hbnjjmm
 
 Nenenwwn
+Nnn
+
+H
+H
+Njjjjjy
 
 
-
+Hh
+G
 
 
 
@@ -21,6 +27,8 @@ Fddmm gr
 Jjjjbbb
 No 
 Ddd
+
+
 
 Hhshsjs
 Seme 
