@@ -3,7 +3,9 @@
 Mn
 
 You sss
-NNznz
+NN
+S
+
 
 Mcccffnwnsnnsnsnn
 
@@ -24,6 +26,8 @@ S
 
 
 Hbnjjmm
+Xx
+
 
 Nenenwwn
 Nnn
