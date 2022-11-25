@@ -8,7 +8,24 @@ Hh
 Mamsbbxdd
 Fddmm gr 
 Hhmwmww
+H
 
+Ok
+
+Jj
+
+Bb
+
+Xx
+
+B
+
+M
+
+P
+
+
+A
 Wkllllll
 
 
