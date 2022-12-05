@@ -27,4 +27,5 @@ const AuthFooter = props => {
     )
 }
 
+
 export default AuthFooter;
