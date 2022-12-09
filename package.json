@@ -30,6 +30,7 @@
     "redux-logger": "^3.0.6"
   },
   "scripts": {
+    "start": "npm install",
     "webpack": "webpack --watch --mode=development",
     "postinstall": "webpack"
   },
