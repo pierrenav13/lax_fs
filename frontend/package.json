@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "BUILD_PATH='../../public' react-scripts build"
+    "start": "react-scripts start"
   },
   "keywords": [],
   "author": "",
