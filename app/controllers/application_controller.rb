@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
     helper_method :logged_in?, :current_user, :main_channel
 
     def main_channel
-        @main ||= Channel.find_by(name: "general")
+        @main ||= Channel.find_by(name: "welcome")
     end
 
     def current_user

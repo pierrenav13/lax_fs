@@ -24,7 +24,7 @@ const SidebarHeaderDropdown = ({ open, user }) => {
                 </p>
             </section>
 
-            {/* <section className="options">
+            <section className="options">
                 <ul>
                     <li onClick={ e => {
                             e.preventDefault();
@@ -36,9 +36,28 @@ const SidebarHeaderDropdown = ({ open, user }) => {
                         ) : null }
                     </li>
                 </ul>
-            </section> */}
+            </section>
 
-            
+            <section className="workspace-info-container">
+                <section className="workspace-info">
+                    <section>
+                        <figure>
+                            <FontAwesomeIcon id="logo-img" icon="umbrella-beach" flip="horizontal"/>
+                        </figure>
+                        <p>
+                            <span>
+                                Lax Chat
+                            </span>
+                            <span>
+                                lax-chat.herokuapp.com
+                            </span>
+                        </p>
+                    </section>
+                    <p>
+                        Lax is still in development. It is a clone of the communication app <a href="https://slack.com/">Slack</a>
+                    </p>
+                </section>
+            </section>
             <ul>
                 <li onClick={ () => dispatch(logoutUser()).then(() => history.push("/login")) }>
                     Sign out of Lax

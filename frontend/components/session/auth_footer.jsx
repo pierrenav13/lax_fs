@@ -6,16 +6,22 @@ const AuthFooter = props => {
     return (
         <footer className="auth-footer">
             <div>
+                <Link to="/welcome">
+                    <FontAwesomeIcon icon="umbrella-beach" flip="horizontal"/>
+                </Link>
                 <ul>
                     <li>
-                        <a href="https://github.com/pierrenav13">
+                        <span>Contact Me</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mmcnulty20/">
                             <button>
                                 <FontAwesomeIcon icon={["fab", "github"]} />
                             </button>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/pierre-navarin-709335223/">
+                        <a href="#">
                             <button>
                                 <FontAwesomeIcon icon={["fab", "linkedin"]} />
                             </button>
@@ -26,7 +32,5 @@ const AuthFooter = props => {
         </footer>
     )
 }
-
-
 
 export default AuthFooter;

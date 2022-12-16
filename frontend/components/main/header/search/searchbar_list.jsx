@@ -52,10 +52,12 @@ class SearchbarList extends Component {
             <> 
                 { this.state.searchString.length === 0 ? (
                     <>
-                    
+                    <li key="no" className="no-search">
+                        Narrow your search
+                    </li>
                     <li className="no-search">
                         <FontAwesomeIcon icon="search" />
-                        Start typing to find a place to be lax
+                        Search for a channel name
                     </li>
                     </>
                 ) : ( 

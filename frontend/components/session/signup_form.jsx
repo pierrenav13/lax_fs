@@ -199,13 +199,13 @@ class SignupForm extends Component {
             <div className="auth-page signup">
                 <figure id="logo-button">
                     <Link to="/welcome">
-                        <i className="fas fa-couch"></i>
+                        <FontAwesomeIcon icon="umbrella-beach" flip="horizontal"/>
                         <span>lax</span>
                     </Link>
                 </figure>
                 <section className={ `auth-form-container signup` }>
                     <section className="auth-form">
-                        <h1>First, create an account.</h1>
+                        <h1>First, create your account</h1>
                         <form onSubmit={this.handleSubmit}>
 
                             <label htmlFor="fullname">
@@ -217,7 +217,7 @@ class SignupForm extends Component {
                                         onBlur={this.handleLeave(0)}
                                         id="fullname"
                                         value={this.state.username}
-                                        placeholder="Ex. John Doe"
+                                        placeholder="Your full name"
                                         onChange={this.handleChange("username")} />
                                     { this.errors[0] }
                                     {this.state.check[0] ? ( <FontAwesomeIcon icon="check-circle" /> ) : null}
@@ -233,7 +233,7 @@ class SignupForm extends Component {
                                         value={this.state.email}
                                         onFocus={this.handleFocus(1)}
                                         onBlur={this.handleLeave(1)}
-                                        placeholder="jdoe12@gmail.com"
+                                        placeholder="name@work-email.com"
                                         onChange={this.handleChange("email")} />
                                         {this.errors[1]}
                                         {this.state.check[1] && !this.props.emailExists ? ( <FontAwesomeIcon icon="check-circle" /> ) : null}
@@ -249,7 +249,7 @@ class SignupForm extends Component {
                                         value={this.state.password}
                                         onFocus={this.handleFocus(2)}
                                         onBlur={this.handleLeave(2)}
-                                        placeholder="Must be 6 characters or more"
+                                        placeholder="6 characters or more"
                                         onChange={this.handleChange("password")} />
                                         {this.errors[2]}
                                         {this.state.check[2] ? ( <FontAwesomeIcon icon="check-circle" /> ) : null}
@@ -258,18 +258,23 @@ class SignupForm extends Component {
                             <button disabled={ this.errors.some(e => e !== null) ? true : false }>Create Account</button>
                         </form>
                             
-                        <button onClick={e => this.props.loginDemo()} className="demo">Log in as Demo User</button>
+                        <button onClick={e => this.props.loginDemo()} className="demo">Log in as a demo user</button>
                     </section>
-                    <p>Already have an account? <Link to="/login" >Sign In</Link>.</p>
+                    <p>If you already have a Lax account, you can <Link to="/login" >sign in</Link>.</p>
                 </section>
                 <ul className="signup-footer-container">
                     <li>
-                        <a href="https://github.com/pierrenav13">
+                        <a href="https://slack.com/">
+                            Slack
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mmcnulty20/">
                             Github
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/pierre-navarin-709335223/">
+                        <a href="#">
                             LinkedIn
                         </a>
                     </li>

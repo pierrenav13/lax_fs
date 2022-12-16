@@ -119,7 +119,7 @@ class CreateChannelModal extends Component {
                     </button>
                 </section>
                 <p>
-                    Channels are used to chat with friends or groups. They can be used to talk about common interests or get help with something.
+                    Channels are how you communicate with friends or groups. Seperate channels cover different interests - like #dnd.
                 </p>
                 <form onSubmit={ this.handleSubmit }>
 
@@ -133,7 +133,7 @@ class CreateChannelModal extends Component {
                             value={ this.state.name }
                             onFocus={ this.handleFocus } 
                             onBlur={ this.handleBlur }
-                            placeholder="e.g. football-talk" />
+                            placeholder="e.g. beach-trip" />
                         <div className="counter">
                             { this.state.remainingChars }
                         </div>
@@ -146,7 +146,7 @@ class CreateChannelModal extends Component {
                             value={ this.state.topic }
                             onBlur={ this.handleBlur } />
                             <br/>
-                            <span className="subline">What's the channel about?</span>
+                            <span className="subline">What's this channel about?</span>
                     </label>
 
                     <label htmlFor="private" className="private">
@@ -154,11 +154,11 @@ class CreateChannelModal extends Component {
                             <strong>Make private</strong> <br/>
                             { !this.state.isPrivate ? (
                                 <>
-                                    Private channels are only visible or joinable through invite.
+                                    When a channel is set to private, it can only be viewed or joined by invitation.
                                 </>
                             ) : (
                                 <>
-                                    <span>This decision is final.</span> Private channels cannot be returned to public later.
+                                    <span>This can't be undone.</span> A private channel cannot be made public later on.
                                 </>
                              )}
                         </p>
