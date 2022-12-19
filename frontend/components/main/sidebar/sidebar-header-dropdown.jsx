@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import DefaultAvatarIcon from "../avatar_icon";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import MyProfile from "./my_profile";
 import { useDispatch } from "react-redux";
 import { logoutUser } from "../../../actions/session_actions";
 
 const SidebarHeaderDropdown = ({ open, user }) => {
-    const history = useHistory();
+    const navigate = useNavigate();
     const dispatch = useDispatch();
     const [profileWarning, setProfileWarning] = useState(false)
     return (
@@ -59,7 +59,7 @@ const SidebarHeaderDropdown = ({ open, user }) => {
                 </section>
             </section>
             <ul>
-                <li onClick={ () => dispatch(logoutUser()).then(() => history.push("/login")) }>
+                <li onClick={ () => dispatch(logoutUser()).then(() => navigate("/login")) }>
                     Sign out of Lax
                 </li>
             </ul>

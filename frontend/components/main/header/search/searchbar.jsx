@@ -38,7 +38,7 @@ class Searchbar extends Component {
                 </figure>
                 { this.state.open ? (
                         <SearchListContainer 
-                            history={ this.props.history }
+                            navigate={ this.props.navigate }
                             close={ this.handleClose } />
                     ) : null }
                 <FontAwesomeIcon icon="search" />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { AuthRoute, ProtectedRoute } from "../utils/route_utils";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Routes, Redirect } from "react-router-dom";
 
 import logoUrl from '../../app/assets/images/patterns/logo.svg'
 
@@ -34,20 +34,20 @@ const App = () => {
                 </defs>
             </svg>
         <header>
-            <Switch>
+            <Routes>
                 <Route path="/welcome" component={ NavBarContainer } />
                 <AuthRoute path="/login" component={ NavBarContainer } />
                 <Route path="/signup" render={() => null} />
                 <ProtectedRoute path="/" component={ MainHeader } />
-            </Switch>
+            </Routes>
         </header>
-        <Switch>
+        <Routes>
             <AuthRoute path="/login" component={LoginFormContainer} />
             <AuthRoute path="/signup" component={SignUpFormContainer} />
             <Route exact path="/welcome" component={SplashContainer} />
             <Redirect exact from="/" to={ cId ? `/c/${cId}` : `welcome` } />
             <ProtectedRoute path="/" component={ Main } />
-        </Switch>
+        </Routes>
     </>)
 };
 

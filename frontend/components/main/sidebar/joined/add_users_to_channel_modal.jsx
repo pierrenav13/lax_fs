@@ -59,11 +59,11 @@ class AddUsersToChannelModal extends Component {
         const members = this.state.members;
         const newMembers = size(members) > 0 ? Object.keys(members) : 
             this.state.all ? Object.keys(this.props.users) : null
-            this.props.history.push(`/c/${ this.props.channelId }`)
+            this.props.navigate(`/c/${ this.props.channelId }`)
         Object.values(this.state.members).forEach( m => m.selected = false )
         if (newMembers !== null ) {
             this.props.addMembers(this.props.channelId, newMembers).then( () => this.props.closeModal() )
-            this.props.history.push(`/c/${ this.props.channelId }`)
+            this.props.navigate(`/c/${ this.props.channelId }`)
         } else {
             this.props.closeModal();
         }

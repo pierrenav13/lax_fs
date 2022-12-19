@@ -20,7 +20,7 @@ class DisplayIndex extends Component {
         if (this.props.type === "Channels") {
             this.props.openModal();
         } else {
-            this.props.history.push("/new-dm")
+            this.props.navigate("/new-dm")
         }
     }
 
@@ -48,9 +48,8 @@ class DisplayIndex extends Component {
                             </div>
                         </figure>
                     </div>
-                    {/* Add BROWSE functionality later */}
                     <DisplayList
-                        history={ this.props.history }
+                        navigate={ this.props.navigate }
                         type={ this.props.type }
                         content={ this.props.content }
                         open={ this.state.open }

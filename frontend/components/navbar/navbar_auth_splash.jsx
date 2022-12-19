@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import LaunchButton from "./launch_button";
 
@@ -21,7 +21,7 @@ export default props => {
             </ul>
             {props.loggedIn ? (
                 <div className="nav-btns logged-in">
-                    <LaunchButton history={useHistory()} logout={props.logout} />
+                    <LaunchButton navigate={useNavigate()} logout={props.logout} />
                 </div>
                 ) : (
                     <div className="nav-btns logged-out">

@@ -96,13 +96,13 @@ export const deleteUser = userId => {
     })
 }
 
-export const loginUser = (user, history) => {
+export const loginUser = (user, navigate) => {
     return dispatch => SessionAPIUtil.loginUser(user).then(res => {
         return dispatch(receiveCurrentUser(res))
     }, errors => {
         return dispatch(receiveSessionErrors(errors))
-    }).then(() => { if (history) { 
-        history.push("/") }})
+    }).then(() => { if (navigate) { 
+        navigate("/") }})
 }
 
 export const signupUser = user => {
@@ -126,7 +126,7 @@ const demo = {
     password: "password"
 }
 
-export const loginDemo = history => loginUser(demo,history)
+export const loginDemo = navigate => loginUser(demo, navigate)
 
 
 export const checkEmail = email => {

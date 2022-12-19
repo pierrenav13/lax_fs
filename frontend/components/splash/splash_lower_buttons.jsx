@@ -9,9 +9,9 @@ class SplashLowerButtons extends Component {
 
     handleDemo(e){
         if (this.props.loggedIn) {
-            this.props.history.push("/")
+            this.props.navigate("/")
         } else {
-            this.props.loginDemo(this.props.history);
+            this.props.loginDemo(this.props.navigate);
         }
     }
 

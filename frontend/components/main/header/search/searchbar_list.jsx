@@ -34,9 +34,6 @@ class SearchbarList extends Component {
                 { filtered.map( c => (
                     <li key={ c.id } className="link"
                         onMouseDown={ e => e.preventDefault() }
-                        // onClick={ e => {
-                            // this.props.history.push(`/c/${c.id}`) 
-                            // this.props.close()
                          >
                         <Link to={ `/c/${c.id}` }>
                             <FontAwesomeIcon icon={ c.isPrivate ? "lock" : "hashtag" } />

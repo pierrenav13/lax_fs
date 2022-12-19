@@ -10,7 +10,7 @@ const mapStateToProps = ({ session: { currentUserId } }) => (
 
 const mapDispatchToProps = dispatch => (
     {
-        loginDemo: history => dispatch(loginDemo(history))
+        loginDemo: navigate => dispatch(loginDemo(navigate))
     }
 )
 
