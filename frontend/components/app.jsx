@@ -1,6 +1,6 @@
 import React from 'react';
 import { AuthRoute, ProtectedRoute } from "../utils/route_utils";
-import { Route, Routes, Redirect } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 
 import logoUrl from '../../app/assets/images/patterns/logo.svg'
 
@@ -45,7 +45,7 @@ const App = () => {
             <AuthRoute path="/login" component={LoginFormContainer} />
             <AuthRoute path="/signup" component={SignUpFormContainer} />
             <Route exact path="/welcome" component={SplashContainer} />
-            <Redirect exact from="/" to={ cId ? `/c/${cId}` : `welcome` } />
+            <Navigate exact from="/" to={ cId ? `/c/${cId}` : `welcome` } />
             <ProtectedRoute path="/" component={ Main } />
         </Routes>
     </>)
