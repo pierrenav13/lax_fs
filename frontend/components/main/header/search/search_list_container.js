@@ -1,8 +1,7 @@
 import { connect } from "react-redux";
 import SearchbarList from "./searchbar_list";
 import { searchChannels } from "../../../../actions/channel_actions";
-import { withRouter } from "../../../router";
-import pick from "lodash/pick"
+import  withRouter  from "../../../router";
 
 const mapStateToProps = ({ entities: { channels: { search } } }) => {
     // search = search ? search.filter( c => c.member || !c.isPrivate ) : []

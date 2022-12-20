@@ -4,7 +4,7 @@ import { fetchUserChannels,
             fetchAllChannels,
             deleteChannel } from "../../../../actions/channel_actions"
 import { openModal } from "../../../../actions/ui_actions"
-import { withRouter } from "../../../router"
+import withRouter from "../../../router"
 
 const mapStateToProps = ({ entities: { channels }, session: { currentUserId }, ui: { modal } }) => {
     channels = { ...channels }
