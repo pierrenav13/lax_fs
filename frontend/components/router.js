@@ -17,3 +17,5 @@ function withRouter(Component) {
 
     return ComponentWithRouterProp;
 }
+
+export default withRouter;
