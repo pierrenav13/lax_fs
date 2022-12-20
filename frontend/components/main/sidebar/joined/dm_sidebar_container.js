@@ -1,5 +1,5 @@
 import { connect } from "react-redux"
-import { withRouter } from "react-router"
+import { withRouter } from "../../../router"
 import DisplayIndex from "./sidebar_display_index"
 
 const mapStateToProps = ({ entities: { dms, users }, session: { currentUserId } }) => {

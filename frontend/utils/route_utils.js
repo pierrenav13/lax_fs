@@ -1,5 +1,7 @@
 import React from "react";
-import { Route, Navigate, withRouter } from "react-router-dom";
+import { Route, Navigate } from "react-router-dom";
+import {  withRouter } from "../components/router";
+
 import { connect } from "react-redux";
 import { purgeErrors } from "./function_helpers";
 

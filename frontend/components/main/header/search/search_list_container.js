@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import SearchbarList from "./searchbar_list";
 import { searchChannels } from "../../../../actions/channel_actions";
-import { withRouter } from "react-router-dom";
+import { withRouter } from "../../../router";
 import pick from "lodash/pick"
 
 const mapStateToProps = ({ entities: { channels: { search } } }) => {

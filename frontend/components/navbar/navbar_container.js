@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/session_actions'; //temp
 import NavBar from './navbar';
-import { withRouter } from 'react-router-dom';
+import { withRouter } from '../router';
 
 const mapStateToProps = ({ session }, ownProps) => {
     const location = ownProps.location.pathname

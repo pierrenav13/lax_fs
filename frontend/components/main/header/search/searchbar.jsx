@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SearchListContainer from "./search_list_container";
-import { withRouter } from "react-router-dom";
+import { withRouter } from "../../../router";
 
 class Searchbar extends Component {
     componentDidUpdate(prevProps, prevState){

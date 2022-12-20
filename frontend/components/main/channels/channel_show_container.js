@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import ChannelShow from "./channel_show";
-import { withRouter } from "react-router-dom";
+import { withRouter } from "../../router";
 import { addChannelMembers } from "../../../actions/channel_actions";
 import { fetchChannelMessages, fetchNewMessage, receiveMessage, removeMessage } from "../../../actions/message_actions";
 
