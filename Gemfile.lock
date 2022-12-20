@@ -84,7 +84,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
-    date (3.3.2)
+    date (3.3.3)
     debug_inspector (1.1.0)
     erubi (1.11.0)
     execjs (2.8.1)
@@ -129,8 +129,6 @@ GEM
       net-protocol
     nio4r (2.5.8)
     nokogiri (1.13.10-x86_64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.13.10-x86_64-linux)
       racc (~> 1.4)
     pg (1.4.5)
     pry (0.14.1)
@@ -227,7 +225,6 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
-  x86_64-linux
 
 DEPENDENCIES
   annotate
