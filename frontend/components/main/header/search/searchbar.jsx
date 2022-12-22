@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SearchListContainer from "./search_list_container";
-import withRouter from "../../../router";
+import { withRouter } from "react-router-dom";
 
 class Searchbar extends Component {
     componentDidUpdate(prevProps, prevState){
@@ -38,7 +38,7 @@ class Searchbar extends Component {
                 </figure>
                 { this.state.open ? (
                         <SearchListContainer 
-                            navigate={ this.props.navigate }
+                            history={ this.props.history }
                             close={ this.handleClose } />
                     ) : null }
                 <FontAwesomeIcon icon="search" />

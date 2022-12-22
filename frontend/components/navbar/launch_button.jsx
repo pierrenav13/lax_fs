@@ -32,12 +32,9 @@ class LaunchButton extends Component {
                 </div>
                 <div className={`dropdown` + (this.state.dropped ? " reveal" : "") }>
                     <ul className="workspaces">
-                        <li onClick={e => this.props.navigate("/")}>
+                        <li onClick={e => this.props.history.push("/")}>
                             <div>
-                                <figure>
-                                    <FontAwesomeIcon id="logo-img" icon="umbrella-beach" flip="horizontal"/>
-                                </figure>
-                                Start Relaxing 
+                                Enter Lax
                             </div>
                             <FontAwesomeIcon icon="arrow-right" />
                         </li>
@@ -47,7 +44,7 @@ class LaunchButton extends Component {
                             <div onClick={e => {
                                 e.preventDefault();
                                 this.props.logout().then(() => {
-                                    this.props.navigate("/login")
+                                    this.props.history.push("/login")
                                 } );
                             }}>
                                 Sign in to a different account

@@ -1,8 +1,8 @@
 import React from 'react';
 import { AuthRoute, ProtectedRoute } from "../utils/route_utils";
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
-import logoUrl from '../../app/assets/images/patterns/logo.svg'
+// import logoUrl from '../../app/assets/images/patterns/logo.svg'
 
 import LoginFormContainer from './session/login_form_container';
 import SignUpFormContainer from './session/signup_form_container';
@@ -25,29 +25,29 @@ const App = () => {
         receiveDM: dm => dispatch(receiveDM(dm))
     }))
     return (<>
-        <svg id="logo-bg">
+        {/* <svg id="logo-bg">
                 <defs>
                     <pattern id="logo-colors"  patternContentUnits="objectBoundingBox" width="1" height="1" 
                             patternTransform="scale(-1.2,1.2) translate(66,-58)">
                         <image href={logoUrl}  x="0" y="0" width="1" height="1" />
                     </pattern>
                 </defs>
-            </svg>
+            </svg> */}
         <header>
-            <Routes>
+            <Switch>
                 <Route path="/welcome" component={ NavBarContainer } />
                 <AuthRoute path="/login" component={ NavBarContainer } />
                 <Route path="/signup" render={() => null} />
                 <ProtectedRoute path="/" component={ MainHeader } />
-            </Routes>
+            </Switch>
         </header>
-        <Routes>
+        <Switch>
             <AuthRoute path="/login" component={LoginFormContainer} />
             <AuthRoute path="/signup" component={SignUpFormContainer} />
             <Route exact path="/welcome" component={SplashContainer} />
-            <Navigate exact from="/" to={ cId ? `/c/${cId}` : `welcome` } />
+            <Redirect exact from="/" to={ cId ? `/c/${cId}` : `welcome` } />
             <ProtectedRoute path="/" component={ Main } />
-        </Routes>
+        </Switch>
     </>)
 };
 

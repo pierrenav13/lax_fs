@@ -1,6 +1,6 @@
-import { connect } from "react-redux"
-import withRouter from "../../../router"
-import DisplayIndex from "./sidebar_display_index"
+import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
+import DisplayIndex from "./sidebar_display_index";
 
 const mapStateToProps = ({ entities: { dms, users }, session: { currentUserId } }) => {
     dms = Object.values(dms).map ( dm => {

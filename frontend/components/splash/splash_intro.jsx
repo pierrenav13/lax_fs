@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import introImgUrl from "../../../app/assets/images/splash/splash_intro_img.svg"
+// import introImgUrl from "../../../app/assets/images/splash/demo_splash.jpg"
 
 
 class SplashIntro extends Component {
@@ -11,9 +11,9 @@ class SplashIntro extends Component {
 
     handleDemo(e){
         if (this.props.loggedIn) {
-            this.props.navigate("/")
+            this.props.history.push("/")
         } else {
-            this.props.loginDemo(this.props.navigate);
+            this.props.loginDemo(this.props.history);
         }
     }
 
@@ -21,23 +21,22 @@ class SplashIntro extends Component {
         return(
             <div className="splash-intro">
                 <section className="intro-text">
-                    <p>CHILL AT HOME</p>
-                    <h1>Lax brings you together, wherever you are</h1>
-                    <p>All of the communication tools you need to spend time with friends, plan time together, and embrace relaxation no matter where you are.</p>
+                    <h1>Lax is your digital chill spot.</h1>
+                    <p>Transform the way you chat with your friends with one place for everyone and everything you could want to have a good time chatting with new and old friends.</p>
                     <Link to="/signup">
                         <button className="btn-blue">
-                            <span>TRY LAX FOR FREE</span>
+                            <span>SIGN UP FOR FREE</span>
                         </button>
                     </Link>
                     <Link to="#">
                         <button onClick={ this.handleDemo }
                             className="btn-white">
-                            <span>SEE THE DEMO</span>
+                            <span>TRY A DEMO</span>
                         </button>
                     </Link>
                 </section>
-                <figure className="intro-img">
-                    <img src={introImgUrl} alt=""/>
+                <figure className="intro-img">  
+                    <img src={window.splashimage} alt=""/>
                 </figure>
             </div>
         )

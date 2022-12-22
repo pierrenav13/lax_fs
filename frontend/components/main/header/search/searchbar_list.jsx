@@ -34,6 +34,9 @@ class SearchbarList extends Component {
                 { filtered.map( c => (
                     <li key={ c.id } className="link"
                         onMouseDown={ e => e.preventDefault() }
+                        // onClick={ e => {
+                            // this.props.history.push(`/c/${c.id}`) 
+                            // this.props.close()
                          >
                         <Link to={ `/c/${c.id}` }>
                             <FontAwesomeIcon icon={ c.isPrivate ? "lock" : "hashtag" } />
@@ -49,12 +52,10 @@ class SearchbarList extends Component {
             <> 
                 { this.state.searchString.length === 0 ? (
                     <>
-                    <li key="no" className="no-search">
-                        Narrow your search
-                    </li>
+                    
                     <li className="no-search">
                         <FontAwesomeIcon icon="search" />
-                        Search for a channel name
+                        Start typing to find a place to be lax
                     </li>
                     </>
                 ) : ( 

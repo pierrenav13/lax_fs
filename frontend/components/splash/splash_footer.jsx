@@ -7,10 +7,6 @@ class SplashFooter extends Component {
         return(
             <footer className="splash-footer">
                 <section className="footer-lists">
-                    <figure id="logo-button">
-                        <Link to="/welcome">
-                            <FontAwesomeIcon id="logo-img" icon="umbrella-beach" flip="horizontal"/></Link>
-                    </figure>
                     <nav>
                         <ul>
                             <li>
@@ -38,68 +34,29 @@ class SplashFooter extends Component {
                                 CSS/SCSS
                             </li>
                         </ul>
-                        <ul>
-                            <li>
-                                HOW I RE<strong>LAX</strong>
-                            </li>
-                            <li>
-                                Dungeons and Dragons
-                            </li>
-                            <li>
-                                Theater
-                            </li>
-                            <li>
-                                Disney
-                            </li>
-                            <li>
-                                Sketching
-                            </li>
-                            <li>
-                                Eating
-                            </li>
-                            <li>
-                                Candy Making
-                            </li>
-                            <li>
-                                Singing Poorly
-                            </li>
-                            <li>
-                                Camping
-                            </li>
-                            <li>
-                                Beer & Wine Tasting
-                            </li>
-                            <li>
-                                Video Games
-                            </li>
-                        </ul>
+                        
                         <ul>
                             <li>OTHER PROJECTS</li>
                             <li>
-                                <a href="http://polisee-app.herokuapp.com/#/" title="MERN Stack built June 2020 for finding and contacting your representatives">
-                                    Polisee
+                                <a href="https://stu-dash.herokuapp.com/" title="MERN">
+                                    StudyDash
                                 </a>
                             </li>
                             <li>
-                                <a href="http://the-tavern.herokuapp.com/" title="Dungeons and Dragons-themed Canvas & Vanilla JS minigame">
-                                    The Tavern
+                                <a href="https://pierrenav13.github.io/MedievalMelee/" title="Vanilla JS Game">
+                                    Medieval Melee
                                 </a>
                             </li>
                         </ul>
                         <ul>
                             <li>
-                                REACH OUT
+                                SOFTWARE ENGINEER
                             </li>
                             <li>
-                                Megan McNulty
+                                Pierre Navarin
                             </li>
                             <li>
-                                (408) 656 5702
-                            </li>
-                            <li>
-                                <a href="mailto:megan@mcnulty.com" >
-                                    Email me
-                                </a>
+                                Email: pnavarin@gmail.com
                             </li>
                         </ul>
                     </nav>
@@ -108,40 +65,33 @@ class SplashFooter extends Component {
                     <nav>
                         <ul>
                             <li>
-                                <a href="https://slack.com/">
-                                    Slack
-                                </a>
+                                    Slack Clone
                             </li>
                             <li>
                                 <a href="https://slack.com/">
-                                    Lax is a Slack Clone
+                                    Link to Slack
                                 </a>
                             </li>
-                            <li>
+                            {/* <li>
                                 <a href="https://slack.com/">
                                     Site for Skill Demonstration Only
                                 </a>
-                            </li>
-                            {/* <li><FontAwesomeIcon icon="globe" /> Change Region <FontAwesomeIcon icon="chevron-down"/></li> */}
+                            </li> */}
+                            
                         </ul>
                         <ul>
-                            {/* <li>
-                                <a href="#">
-                                    <FontAwesomeIcon icon={["fab", "twitter"]} />
-                                </a>
-                            </li> */}
                             <li>
-                                <a href="https://github.com/mmcnulty20/">
+                                <a href="https://github.com/pierrenav13">
                                     <FontAwesomeIcon icon={["fab", "github"]} />
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://angel.co/u/pierre-navarin">
                                     <FontAwesomeIcon icon={["fab", "angellist"]} />
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.linkedin.com/in/pierre-navarin-709335223/">
                                     <FontAwesomeIcon icon={["fab", "linkedin"]} />
                                 </a>
                             </li>

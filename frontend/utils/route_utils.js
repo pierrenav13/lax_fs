@@ -1,7 +1,7 @@
 import React from "react";
-import { Route, Navigate } from "react-router-dom";
-import withRouter from "../components/router";
-
+import { Route,
+        Redirect,
+        withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { purgeErrors } from "./function_helpers";
 
@@ -19,7 +19,8 @@ const Auth = ({path, onLeave, loggedIn, exact, component: Component}) => {
             onLeave={onLeave}
             exact={exact}
             render={props => 
-                loggedIn ? <Navigate to="/" />: <Component {...props} />
+                loggedIn ? <Redirect to="/" />: <Component {...props} />
+                // loggedIn ? <Redirect to={`/c/${mainChannel}`} />: <Component {...props} />
             }
         />
     )
@@ -31,7 +32,7 @@ const Protected = ({path, loggedIn, exact, component: Component}) => {
             path={path}
             exact={exact}
             render={props => 
-                loggedIn ? <Component {...props} /> : <Navigate to="/" />
+                loggedIn ? <Component {...props} /> : <Redirect to="/" />
             }
         />
     )

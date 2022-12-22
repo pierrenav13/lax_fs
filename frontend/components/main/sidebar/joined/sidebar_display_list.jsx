@@ -13,7 +13,7 @@ class DisplayList extends Component {
         return e => {
             if ( e.target.className !== "x" ) {
                 e.preventDefault;
-                this.props.navigate(path);
+                this.props.history.push(path);
             }
         }
     }
@@ -22,7 +22,7 @@ class DisplayList extends Component {
         return e => {
             if ( Number.isInteger(id) ) {
                 this.props.delete(id);
-                this.props.navigate("/c/18")
+                this.props.history.push("/c/18")
             }
         }
     }

@@ -4,7 +4,9 @@
     // z-index: 0;
     border-top: 1px solid rgba($color: $background, $alpha: 0.2);
     background: $dark-blue;
-    height: calc(100vh - 38px);
+    // height: calc(100vh - 38px);
+    height: calc(100vh - 2px);
+    margin-top: -30px;
     width: 260px;
     color: $background;
     font-weight: 400;
@@ -223,7 +225,7 @@
         box-shadow: 0 -1px 0 0px rgba($color: $background, $alpha: 0.2);
         border-top: 14px solid $dark-blue;
         border-bottom: 4px solid $dark-blue;
-        margin-top: 112px;
+        // margin-top: 112px;
         &::-webkit-scrollbar {
             width: 12px;
         }
