@@ -30,7 +30,6 @@
     "redux-logger": "^3.0.6"
   },
   "scripts": {
-    "start": "npm",
     "build": "npm install --prefix frontend && npm run build --prefix frontend",
     "webpack": "webpack --watch --mode=development",
     "postinstall": "webpack"
