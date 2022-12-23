@@ -2,9 +2,10 @@
   "name": "lax",
   "version": "1.0.0",
   "description": "",
+  "homepage": "./public",
   "scripts": {
     "start": "react-scripts start",
-    "build": "BUILD_PATH='../public' react-scripts build"
+    "build": "react-scripts build --template ../public/index.html"
   },
   "keywords": [],
   "author": "",
