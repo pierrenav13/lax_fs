@@ -27,6 +27,7 @@ class AuthForm extends Component {
         this.props.processForm(this.state);
     }
 
+    
     render(){
         const errors = this.props.errors.map((err, i) => <li key={i}><FontAwesomeIcon icon="exclamation-triangle" /><p>{err}</p></li>)
         return (
