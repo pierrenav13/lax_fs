@@ -25,3 +25,4 @@ design_docs
 /config/master.key
 node_modules
 package-lock.json
+/public
