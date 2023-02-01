@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: Lax_production
-  username: Lax
-  password: <%= ENV['LAX_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
