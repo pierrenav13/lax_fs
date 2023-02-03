@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-    helper_method :logged_in, :current_user, :main_channel
+    helper_method :logged_in?, :current_user, :main_channel
 
     def main_channel
         @main ||= Channel.find_by(name: "general")
@@ -19,7 +19,7 @@ class ApplicationController < ActionController::Base
         current_user = nil
     end
 
-    def logged_in
+    def logged_in?
         !!current_user
     end
 
