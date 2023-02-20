@@ -1,5 +1,5 @@
 {
-  "name": "Lax",
+  "name": "lax",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.10.2",
@@ -13,7 +13,7 @@
     "babel-loader": "^8.1.0",
     "file-loader": "^6.0.0",
     "lodash": "^4.17.21",
-    "react": "^16.14.0",
+    "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "react-router": "^6.2.1",
@@ -36,5 +36,23 @@
   "engines": {
     "node": "13.13.0",
     "npm": "6.14.4"
-  }
+  },
+  "description": "Welcome to Lax! Lax is a clone of Slack, a prevalent messaging app . With Lax, users can create and join channels and send live messages to chat with other users. The live app can be accessed [here](https://lax-13.herokuapp.com/)",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pierrenav13/lax_fs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pierrenav13/lax_fs/issues"
+  },
+  "homepage": "https://github.com/pierrenav13/lax_fs#readme"
 }
